@@ -12,10 +12,11 @@ Pod::Spec.new do |s|
   s.source		= { :git => "https://github.com/IFTTT/RazzleDazzle.git", :tag => s.version.to_s }
   s.social_media_url	= 'https://twitter.com/IFTTT'
   s.platform		= :ios, '8.0'
+  s.swift_version   = '5'
   s.requires_arc	= true
   s.compiler_flags	= '-fmodules'
   s.frameworks		= 'UIKit'
   s.description  = "Razzle Dazzle is a Swift keyframe animation framework by IFTTT, based on Jazz Hands. Move UIViews around the screen based on UIScrollView input, KVO, or anything really. Works well with AutoLayout."
-  s.source_files	= 'Source/*.{h,swift}'
+  s.source_files	= 'Sources/*.{h,swift}'
   
 end
